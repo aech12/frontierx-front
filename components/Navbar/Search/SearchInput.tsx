@@ -20,7 +20,6 @@ function SearchInput({ getSearchResults, setResults }: Props) {
 
 	const handleSearch = async () => {
 		const res = await getSearchResults(input);
-		console.log("RES", res);
 		setResults(res);
 	};
 

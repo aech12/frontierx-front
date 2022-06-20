@@ -2,8 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { FaDiscord } from "react-icons/fa";
 // local
-import { Navbar } from "../components";
+import { Navbar, Accordion } from "../components";
+import HomeTemplate from "../templates/Home";
 
 const Home: NextPage = () => {
 	return (
@@ -14,9 +16,9 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-gray-400">
+			<main className="bg-gray-400 text-white">
 				<Navbar />
-				<div>hi</div>
+				<HomeTemplate />
 			</main>
 
 			<footer className={styles.footer}>
