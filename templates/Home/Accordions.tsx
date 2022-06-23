@@ -3,7 +3,7 @@ import { Accordion } from "../../components";
 import AccordionA from "./AccordionA";
 import AccordionB from "./AccordionB";
 
-const HomeTemplate = () => {
+const Accordions = () => {
 	return (
 		<main className="grid grid-cols-1  justify-items-center md:grid-cols-2">
 			<Accordion title="Title1">
@@ -19,4 +19,4 @@ const HomeTemplate = () => {
 	);
 };
 
-export default HomeTemplate;
+export default Accordions;
