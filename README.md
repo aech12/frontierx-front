@@ -2,7 +2,10 @@
 
 
 Front-end project for Jhely.
+
 I was experimenting with React 18's startTransition on the Search bar. Almost works perfectly except when deleting the input string quickly (keeping delete key pressed)
+
+I wasn't sure if I could use a CSS library like Daisyui so I didn't
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
