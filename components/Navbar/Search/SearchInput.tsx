@@ -30,7 +30,7 @@ function SearchInput({ getSearchResults, setResults }: Props) {
 
 	return (
 		<label className="w-full md:w-96 lg:w-full focus:border-2 focus:border-gray-200 bg-[#1F1F1F] rounded flex justify-between">
-			<button className="p-2 px-4" disabled={isPending} onClick={async () => setResults(await getSearchResults(input))}>
+			<button className="p-2 px-4 active:bg-red-400 " disabled={isPending} onClick={async () => setResults(await getSearchResults(input))}>
 				{isPending ? <ImSpinner3 /> : <BsSearch />}
 			</button>
 			<input value={input} onChange={(e) => onUserType(e)} className="bg-[#1F1F1F] focus:border-0  w-full h-full" />
