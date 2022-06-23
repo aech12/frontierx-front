@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-dark-gray {
+    @apply p-2 px-4 rounded bg-[#0D0D0D] bg-opacity-50 hover:bg-opacity-100;
+  }
+}
+
 html,
 body {
   padding: 0;

@@ -1,8 +1,8 @@
-Dev notes
+## Interview project
 
-1) Normally I'd use Daisyui with Tailwind
-2) I took the liberty to experiment with some stuff (React 18 features, Storybook)
 
+Front-end project for Jhely.
+I was experimenting with React 18's startTransition on the Search bar. Almost works perfectly except when deleting the input string quickly (keeping delete key pressed)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
