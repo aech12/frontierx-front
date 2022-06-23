@@ -12,7 +12,7 @@ const HomeTemplate = () => {
 			<Accordion title="Title2">
 				<AccordionB />
 			</Accordion>
-			<Accordion title="Title1" className="col-start-2">
+			<Accordion title="Title1" className="md:col-start-2">
 				<AccordionA />
 			</Accordion>
 		</main>
