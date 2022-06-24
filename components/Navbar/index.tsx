@@ -1,4 +1,3 @@
-// No auth, /home top navbar
 // import api from "./someApiRoute";
 import Search from "./Search";
 

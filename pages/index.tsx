@@ -1,26 +1,11 @@
 import type { NextPage } from "next";
-import { useEffect } from "react";
 import Head from "next/head";
-import Script from "next/script";
-
 // local
-import { Navbar, Accordion, AnimatedBg } from "../components";
+import { Navbar, AnimatedBg } from "../components";
 import Accordions from "../templates/Home/Accordions";
 import Intro from "../templates/Home/Intro";
 
 const Home: NextPage = () => {
-	useEffect(() => {
-		const threeScript = document.createElement("script");
-		threeScript.setAttribute("id", "threeScript");
-		threeScript.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js");
-		document.getElementsByTagName("head")[0].appendChild(threeScript);
-		return () => {
-			if (threeScript) {
-				threeScript.remove();
-			}
-		};
-	}, []);
-
 	return (
 		<div className="w-full text-center font-sans bg-indigo-900 text-white">
 			<Head>

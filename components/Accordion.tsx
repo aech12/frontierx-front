@@ -12,7 +12,7 @@ function Accordion({ title, children, className }: Props) {
 	const [isOpened, setIsOpened] = useState(true);
 
 	return (
-		<div className={clsx("m-2 p-4 h-min w-96 lg:w-full max-w-lg bg-[#0D0D0D80] bg-opacity-50 rounded", className)}>
+		<div className={clsx("m-2 p-4 h-min w-full sm:w-96 lg:w-full max-w-lg bg-[#0D0D0D80] bg-opacity-50 rounded", className)}>
 			<div className="flex justify-between items/center cursor-pointer" onClick={() => setIsOpened(!isOpened)}>
 				<div>
 					<AiOutlineAlignLeft className="inline-block mb-1 mr-1" />

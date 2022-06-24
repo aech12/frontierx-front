@@ -30,7 +30,7 @@ const set3 = {
 };
 
 function AnimatedBg({ children }: { children: ReactNode }) {
-	const [vantaEffect, setVantaEffect] = useState(0);
+	const [vantaEffect, setVantaEffect] = useState<any>(0);
 	const vantaRef = useRef(null);
 
 	useEffect(() => {
@@ -61,3 +61,20 @@ function AnimatedBg({ children }: { children: ReactNode }) {
 }
 
 export default AnimatedBg;
+
+
+// // testing Lighthouse pageload without using vanta.js
+// import React, { useState, useEffect, useRef } from "react";
+// import type { ReactNode } from "react";
+
+
+// function AnimatedBg({ children }: { children: ReactNode }) {
+
+// 	return (
+// 		<div className="h-full w-full bg-indigo-900">
+// 			{children}
+// 		</div>
+// 	);
+// }
+
+// export default AnimatedBg;
